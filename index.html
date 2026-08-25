@@ -1,100 +1,207 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Portfolio of Semaj Morris, a Computer Science student and software developer at Alabama State University."
+        content="Semaj Morris is a Computer Science student and software developer building practical technology solutions across software, artificial intelligence, accessibility, finance, data, and business."
     >
 
-    <title>Semaj Morris | Software Developer Portfolio</title>
+    <title>Semaj Morris | Software Developer</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         THEME TOGGLE
-    ========================== -->
+    <!-- ==========================================
+         NAVIGATION
+    =========================================== -->
 
-    <button
-        id="theme-toggle"
-        class="theme-btn"
-        aria-label="Toggle light and dark mode"
-    >
-        ☀️ Light Mode
-    </button>
+    <nav class="navbar" id="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                SEMAJ<span>.</span>
+            </a>
+
+            <div class="nav-links" id="nav-links">
+
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+
+                <a
+                    href="./Semaj-Morris-Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="resume-nav"
+                >
+                    Resume ↗
+                </a>
+
+            </div>
+
+            <button
+                class="mobile-menu-btn"
+                id="mobile-menu-btn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </nav>
 
 
-    <!-- =========================
+    <!-- ==========================================
          HERO
-    ========================== -->
+    =========================================== -->
 
-    <header class="hero">
+    <header class="hero" id="home">
 
-        <h1>Semaj Morris 👩🏽‍💻</h1>
+        <div class="hero-container">
 
-        <p class="hero-subtitle">
-            Computer Science Student • Software Developer • Technology & Business
-        </p>
+            <div class="hero-content">
 
-        <p class="hero-description">
-            Building practical technology solutions through software development,
-            creativity, and problem-solving.
-        </p>
+                <p class="eyebrow">
+                    SOFTWARE DEVELOPER • COMPUTER SCIENCE
+                </p>
+
+                <h1>
+                    I build technology that
+                    <span>solves real problems.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Computer Science student at Alabama State University
+                    creating thoughtful digital products across software,
+                    artificial intelligence, accessibility, finance,
+                    data, and business.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-btn">
+                        Explore My Work ↓
+                    </a>
+
+                    <a
+                        href="https://github.com/semajmorris"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="secondary-btn"
+                    >
+                        GitHub ↗
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/semaj-morris-70942b109"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="secondary-btn"
+                    >
+                        LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </div>
 
 
-        <div class="hero-buttons">
-
-            <!-- VIEW PROJECTS -->
-
-            <a
-                href="#projects"
-                class="btn"
+            <div
+                class="developer-card"
+                aria-label="Developer profile code card"
             >
-                View My Work
-            </a>
 
+                <div class="code-window-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-            <!-- RESUME -->
+                <div class="code-content">
 
-            <a
-                href="https://semajmorris.github.io/Semaj-techlife2026/Semaj-Morris-Resume.pdf"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                📄 Resume
-            </a>
+                    <p>
+                        <span class="code-purple">const</span>
+                        developer = {
+                    </p>
 
+                    <p class="indent">
+                        name:
+                        <span class="code-green">
+                            "Semaj Morris"
+                        </span>,
+                    </p>
 
-            <!-- LINKEDIN -->
+                    <p class="indent">
+                        role:
+                        <span class="code-green">
+                            "Software Developer"
+                        </span>,
+                    </p>
 
-            <a
-                href="https://linkedin.com/in/semaj-morris-70942b109"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                💼 LinkedIn
-            </a>
+                    <p class="indent">
+                        interests: [
+                    </p>
 
+                    <p class="double-indent">
+                        <span class="code-green">
+                            "Software"
+                        </span>,
+                    </p>
 
-            <!-- GITHUB -->
+                    <p class="double-indent">
+                        <span class="code-green">
+                            "AI"
+                        </span>,
+                    </p>
 
-            <a
-                href="https://github.com/semajmorris"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                💻 GitHub
-            </a>
+                    <p class="double-indent">
+                        <span class="code-green">
+                            "FinTech"
+                        </span>,
+                    </p>
+
+                    <p class="double-indent">
+                        <span class="code-green">
+                            "Accessibility"
+                        </span>
+                    </p>
+
+                    <p class="indent">
+                        ],
+                    </p>
+
+                    <p class="indent">
+                        mission:
+                        <span class="code-green">
+                            "Build with purpose"
+                        </span>,
+                    </p>
+
+                    <p class="indent">
+                        status:
+                        <span class="code-green">
+                            "Creating →"
+                        </span>
+                    </p>
+
+                    <p>};</p>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -103,611 +210,928 @@
 
     <main>
 
+        <!-- ==========================================
+             STATS
+        =========================================== -->
 
-        <!-- =========================
-             PORTFOLIO HIGHLIGHTS
-        ========================== -->
-
-        <section class="stats">
-
-            <h2>Portfolio Highlights</h2>
+        <section
+            class="stats-section"
+            aria-label="Portfolio highlights"
+        >
 
             <div class="stats-container">
 
-
-                <div class="stat-card">
-
-                    <span class="stat-icon">💻</span>
-
-                    <h3>
-                        <span
-                            class="counter"
-                            data-target="3"
-                        >
-                            0
-                        </span>+
-                    </h3>
-
-                    <p>Software Projects</p>
-
+                <div class="stat">
+                    <h2>3+</h2>
+                    <p>PRODUCTS BUILT</p>
                 </div>
 
-
-                <div class="stat-card">
-
-                    <span class="stat-icon">🏆</span>
-
-                    <h3>
-                        <span
-                            class="counter"
-                            data-target="2"
-                        >
-                            0
-                        </span>
-                    </h3>
-
-                    <p>Technology Internships</p>
-
+                <div class="stat">
+                    <h2>2</h2>
+                    <p>TECH INTERNSHIPS</p>
                 </div>
 
-
-                <div class="stat-card">
-
-                    <span class="stat-icon">📜</span>
-
-                    <h3>
-                        <span
-                            class="counter"
-                            data-target="7"
-                        >
-                            0
-                        </span>+
-                    </h3>
-
-                    <p>Professional Certifications</p>
-
+                <div class="stat">
+                    <h2>3rd</h2>
+                    <p>INNOVATION CHALLENGE</p>
                 </div>
 
-
-                <div class="stat-card">
-
-                    <span class="stat-icon">🌟</span>
-
-                    <h3>
-                        <span
-                            class="counter"
-                            data-target="3"
-                        >
-                            0
-                        </span>+
-                    </h3>
-
-                    <p>Years of Leadership Experience</p>
-
+                <div class="stat">
+                    <h2>7+</h2>
+                    <p>PROFESSIONAL CERTIFICATIONS</p>
                 </div>
-
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             ABOUT ME
-        ========================== -->
-
-        <section class="about">
-
-            <h2>About Me</h2>
-
-
-            <p>
-                I am a senior Computer Science student with an Accounting minor
-                at Alabama State University and an aspiring software engineer
-                passionate about technology, innovation, and solving real-world problems.
-            </p>
-
-
-            <p>
-                My interests include software development, web development,
-                artificial intelligence, data analytics, financial technology,
-                and the intersection of technology and business.
-            </p>
-
-
-            <p>
-                Through technical internships, independent software projects,
-                campus leadership, and professional development opportunities,
-                I have strengthened my skills in programming, problem-solving,
-                communication, teamwork, and project development.
-            </p>
-
-
-            <p>
-                I enjoy identifying everyday challenges and transforming ideas
-                into functional digital solutions.
-            </p>
-
-        </section>
-
-
-        <!-- =========================
-             TECHNICAL SKILLS
-        ========================== -->
-
-        <section class="skills">
-
-            <h2>Technical Skills</h2>
-
-            <div class="cards">
-
-                <div class="card">C</div>
-
-                <div class="card">C++</div>
-
-                <div class="card">Python</div>
-
-                <div class="card">JavaScript</div>
-
-                <div class="card">HTML</div>
-
-                <div class="card">CSS</div>
-
-                <div class="card">Git</div>
-
-                <div class="card">GitHub</div>
-
-                <div class="card">GitHub Pages</div>
-
-                <div class="card">Chart.js</div>
-
-                <div class="card">Microsoft Excel</div>
-
-                <div class="card">Artificial Intelligence</div>
-
-                <div class="card">Data Analytics</div>
-
-                <div class="card">Data Visualization</div>
-
-                <div class="card">Software Development</div>
-
-                <div class="card">Web Development</div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             FEATURED PROJECTS
-        ========================== -->
+        <!-- ==========================================
+             PROJECTS
+        =========================================== -->
 
         <section
+            class="section projects-section"
             id="projects"
-            class="projects"
         >
 
-            <h2>Featured Projects</h2>
+            <div class="section-heading">
 
+                <div>
 
-            <!-- =====================
-                 HORNET NAVIGATOR
-            ====================== -->
+                    <p class="section-label">
+                        SELECTED PROJECTS
+                    </p>
 
-            <div class="project-card featured-project">
-
-                <h3>🐝 Hornet Navigator</h3>
-
-
-                <p>
-                    Developed an interactive campus navigation platform designed
-                    to help Alabama State University students and visitors locate
-                    academic buildings, student services, resources, and campus destinations.
-                </p>
-
-
-                <p>
-                    Built searchable location functionality and organized campus data
-                    to simplify navigation and address common challenges finding
-                    locations across ASU.
-                </p>
-
-
-                <p>
-                    <strong>Technologies:</strong>
-                    HTML, CSS, JavaScript, GitHub Pages
-                </p>
-
-
-                <div class="project-buttons">
-
-                    <a
-                        href="https://semajmorris.github.io/Hornet-navigator/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn"
-                    >
-                        🐝 Live Demo
-                    </a>
-
-
-                    <a
-                        href="https://github.com/semajmorris/Hornet-navigator"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn"
-                    >
-                        💻 View Code
-                    </a>
+                    <h2>
+                        Featured work<span>.</span>
+                    </h2>
 
                 </div>
+
+                <p class="section-description">
+                    Products built around real problems,
+                    real users, and practical digital experiences.
+                </p>
 
             </div>
 
 
-            <!-- =====================
-                 SMARTBUDGET
-            ====================== -->
+            <div class="projects-grid">
 
-            <div class="project-card">
+                <!-- ==================================
+                     PROJECT 01 — HORNET NAVIGATOR
+                =================================== -->
 
-                <h3>💰 SmartBudget</h3>
+                <article class="project-card featured-project">
+
+                    <div class="project-preview">
+
+                        <div class="project-browser">
+
+                            <div class="project-browser-top">
+
+                                <div class="browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="browser-address">
+                                    Hornet Navigator
+                                </div>
+
+                            </div>
+
+                            <a
+                                href="https://semajmorris.github.io/Hornet-navigator/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-image-link"
+                                aria-label="Open Hornet Navigator live project"
+                            >
+                                <img
+                                    src="./images/hornet-navigator.png"
+                                    alt="Hornet Navigator interactive campus map for Alabama State University"
+                                    class="project-screenshot"
+                                >
+                            </a>
+
+                        </div>
+
+                    </div>
 
 
-                <p>
-                    Developed an interactive personal finance dashboard for tracking
-                    income, expenses, budgets, savings goals, and spending activity.
-                </p>
+                    <div class="project-content">
+
+                        <div class="project-title-row">
+
+                            <div>
+
+                                <p class="project-number">
+                                    01
+                                </p>
+
+                                <h3>
+                                    Hornet Navigator
+                                </h3>
+
+                            </div>
+
+                            <span
+                                class="project-arrow"
+                                aria-hidden="true"
+                            >
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Developed an interactive campus navigation
+                            platform designed to help Alabama State
+                            University students and visitors locate
+                            academic buildings, student services,
+                            residence halls, dining, parking,
+                            landmarks, and other campus destinations.
+                        </p>
+
+                        <p>
+                            Built searchable location functionality,
+                            organized campus information, interactive
+                            map features, and access to turn-by-turn
+                            directions to simplify navigation across
+                            ASU.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Search</span>
+                            <span>UX</span>
+                            <span>GitHub Pages</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="https://semajmorris.github.io/Hornet-navigator/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live Project ↗
+                            </a>
+
+                            <a
+                                href="https://github.com/semajmorris/Hornet-navigator"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Code ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
 
 
-                <p>
-                    Implemented dynamic calculations and Chart.js visualizations
-                    to provide financial summaries, budget progress, and spending insights.
-                </p>
+                <!-- ==================================
+                     PROJECT 02 — SMARTBUDGET
+                =================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-preview">
+
+                        <div class="project-browser">
+
+                            <div class="project-browser-top">
+
+                                <div class="browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="browser-address">
+                                    SmartBudget
+                                </div>
+
+                            </div>
+
+                            <a
+                                href="https://semajmorris.github.io/SmartBudget-Finance-Dashboard/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-image-link"
+                                aria-label="Open SmartBudget live project"
+                            >
+                                <img
+                                    src="./images/smartbudget.png"
+                                    alt="SmartBudget personal finance dashboard"
+                                    class="project-screenshot"
+                                >
+                            </a>
+
+                        </div>
+
+                    </div>
 
 
-                <p>
-                    <strong>Technologies:</strong>
-                    HTML, CSS, JavaScript, Chart.js
-                </p>
+                    <div class="project-content">
+
+                        <div class="project-title-row">
+
+                            <div>
+
+                                <p class="project-number">
+                                    02
+                                </p>
+
+                                <h3>
+                                    SmartBudget
+                                </h3>
+
+                            </div>
+
+                            <span
+                                class="project-arrow"
+                                aria-hidden="true"
+                            >
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Developed an interactive personal finance
+                            dashboard for tracking income, expenses,
+                            budgets, savings goals, transactions,
+                            and spending activity.
+                        </p>
+
+                        <p>
+                            Implemented dynamic calculations and
+                            Chart.js visualizations to provide
+                            financial summaries, budget progress,
+                            spending insights, and safe-to-spend
+                            recommendations.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>FinTech</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="https://semajmorris.github.io/SmartBudget-Finance-Dashboard/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live Project ↗
+                            </a>
+
+                            <a
+                                href="https://github.com/semajmorris/SmartBudget-Finance-Dashboard"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Code ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
 
 
-                <div class="project-buttons">
+                <!-- ==================================
+                     PROJECT 03 — ACCESSIBILITY PLATFORM
+                =================================== -->
 
-                    <a
-                        href="https://semajmorris.github.io/SmartBudget-Finance-Dashboard/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn"
-                    >
-                        💰 Live Demo
-                    </a>
+                <article class="project-card coming-project">
 
+                    <div class="coming-project-content">
 
-                    <a
-                        href="https://github.com/semajmorris/SmartBudget-Finance-Dashboard"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn"
-                    >
-                        💻 View Code
-                    </a>
+                        <div class="project-title-row">
 
-                </div>
+                            <div>
+
+                                <p class="project-number">
+                                    03
+                                </p>
+
+                                <span class="coming-badge">
+                                    IN DEVELOPMENT
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Accessible Communication Platform
+                        </h3>
+
+                        <p>
+                            Exploring a communication platform
+                            designed to make video-based interactions
+                            more accessible for Deaf, hard-of-hearing,
+                            blind, and visually impaired users.
+                        </p>
+
+                        <p>
+                            The concept explores technologies such as
+                            sign-language recognition, text and voice
+                            translation, computer vision, and
+                            accessible interface design.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>AI</span>
+                            <span>Accessibility</span>
+                            <span>Computer Vision</span>
+                            <span>Research</span>
+                        </div>
+
+                    </div>
+
+                </article>
 
             </div>
-
-
-            <!-- =====================
-                 PERSONAL PORTFOLIO
-            ====================== -->
-
-            <div class="project-card">
-
-                <h3>🌐 Personal Portfolio Website</h3>
-
-
-                <p>
-                    Designed and developed a responsive personal portfolio from scratch
-                    to showcase technical projects, skills, experience, leadership,
-                    and professional achievements.
-                </p>
-
-
-                <p>
-                    <strong>Technologies:</strong>
-                    HTML, CSS, JavaScript, GitHub Pages
-                </p>
-
-
-                <div class="project-buttons">
-
-                    <a
-                        href="https://semajmorris.github.io/Semaj-techlife2026/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn"
-                    >
-                        🌐 Live Site
-                    </a>
-
-
-                    <a
-                        href="https://github.com/semajmorris/Semaj-techlife2026"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn"
-                    >
-                        💻 View Code
-                    </a>
-
-                </div>
-
-            </div>
-
 
         </section>
 
 
-        <!-- =========================
+        <!-- ==========================================
+             ABOUT
+        =========================================== -->
+
+        <section
+            class="section about-section"
+            id="about"
+        >
+
+            <div class="about-grid">
+
+                <div class="about-heading">
+
+                    <p class="section-label">
+                        ABOUT ME
+                    </p>
+
+                    <h2>
+                        Developer.
+                        Problem solver.
+                        <span>Builder.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-copy">
+
+                    <p>
+                        I am a senior Computer Science student
+                        with an Accounting minor at Alabama State
+                        University and an aspiring software engineer
+                        passionate about technology, innovation,
+                        and solving real-world problems.
+                    </p>
+
+                    <p>
+                        My interests include software development,
+                        web development, artificial intelligence,
+                        data analytics, financial technology,
+                        accessibility, and the intersection of
+                        technology and business.
+                    </p>
+
+                    <p>
+                        Through technical internships, independent
+                        software projects, campus leadership, and
+                        professional development opportunities,
+                        I have strengthened my skills in programming,
+                        problem-solving, communication, teamwork,
+                        and project development.
+                    </p>
+
+                    <p>
+                        I enjoy identifying everyday challenges
+                        and transforming ideas into functional
+                        digital solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SKILLS
+        =========================================== -->
+
+        <section
+            class="section skills-section"
+            id="skills"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        TECH STACK
+                    </p>
+
+                    <h2>
+                        Skills & tools<span>.</span>
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+                    The technologies and concepts I use to
+                    design, develop, and understand digital products.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+
+                    <p class="skill-number">
+                        01
+                    </p>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <div class="skill-list">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <p class="skill-number">
+                        02
+                    </p>
+
+                    <h3>
+                        Tools & Software
+                    </h3>
+
+                    <div class="skill-list">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>GitHub Pages</span>
+                        <span>Chart.js</span>
+                        <span>Microsoft Excel</span>
+                        <span>Visual Studio Code</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <p class="skill-number">
+                        03
+                    </p>
+
+                    <h3>
+                        Technical Concepts
+                    </h3>
+
+                    <div class="skill-list">
+                        <span>Artificial Intelligence</span>
+                        <span>Data Analytics</span>
+                        <span>Data Visualization</span>
+                        <span>Software Development</span>
+                        <span>Web Development</span>
+                        <span>Object-Oriented Programming</span>
+                        <span>Data Structures & Algorithms</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
              EXPERIENCE
-        ========================== -->
+        =========================================== -->
 
-        <section class="experience">
+        <section
+            class="section experience-section"
+            id="experience"
+        >
 
-            <h2>Technical & Professional Experience</h2>
+            <div class="section-heading">
 
+                <div>
 
-            <!-- DISNEY -->
+                    <p class="section-label">
+                        EXPERIENCE
+                    </p>
 
-            <div class="project-card">
+                    <h2>
+                        Where I've worked<span>.</span>
+                    </h2>
 
-                <h3>
-                    🏰 Disney College Program — HBCU Cohort
-                </h3>
+                </div>
 
-                <h4>
-                    Technical Intern | Orlando, FL | Summer 2024
-                </h4>
-
-
-                <p>
-                    Selected for a competitive HBCU cohort, with approximately
-                    20% of applicants admitted.
-                </p>
-
-
-                <p>
-                    Troubleshot guest-entry and attraction-control systems
-                    within a $10M+ operational environment, supporting
-                    system reliability and technical operations.
-                </p>
-
-
-                <p>
-                    Collaborated with engineering teams and utilized EAM
-                    software and diagnostic tools to monitor proprietary
-                    systems and support operational efficiency.
+                <p class="section-description">
+                    Technical experience strengthened by
+                    product thinking, communication,
+                    leadership, and problem-solving.
                 </p>
 
             </div>
 
 
-            <!-- FOWA -->
+            <div class="experience-list">
 
-            <div class="project-card">
+                <!-- DISNEY -->
 
-                <h3>
-                    🏥 FOWA Health IT Program
-                </h3>
+                <article class="experience-item">
 
-                <h4>
-                    Product Development Intern | Montgomery, AL | Fall 2024
-                </h4>
+                    <div class="experience-year">
+                        2024
+                    </div>
+
+                    <div class="experience-main">
+
+                        <h3>
+                            Disney College Program — HBCU Cohort
+                        </h3>
+
+                        <p class="experience-role">
+                            Technical Intern
+                        </p>
+
+                        <p>
+                            Selected for the Disney College Program
+                            HBCU Cohort, with approximately 20% of
+                            applicants admitted.
+                        </p>
+
+                        <p>
+                            Troubleshot guest-entry and
+                            attraction-control systems within a
+                            $10M+ operational environment,
+                            supporting system reliability and
+                            technical operations.
+                        </p>
+
+                        <p>
+                            Collaborated with engineering teams
+                            and utilized EAM software and diagnostic
+                            tools to monitor proprietary systems
+                            and support operational efficiency.
+                        </p>
+
+                        <span class="achievement">
+                            ~20% Applicant Acceptance Rate
+                        </span>
+
+                    </div>
+
+                    <div class="experience-location">
+
+                        <span>
+                            Technical Intern
+                        </span>
+
+                        <span>
+                            Orlando, FL
+                        </span>
+
+                        <span>
+                            Summer 2024
+                        </span>
+
+                    </div>
+
+                </article>
 
 
-                <p>
-                    Developed <strong>The Pacemaker</strong>, a Python-based
-                    Health Information Exchange platform designed to bridge
-                    critical data gaps between EMS and hospitals.
-                </p>
+                <!-- FOWA -->
+
+                <article class="experience-item">
+
+                    <div class="experience-year">
+                        2024
+                    </div>
+
+                    <div class="experience-main">
+
+                        <h3>
+                            FOWA Health IT Program
+                        </h3>
+
+                        <p class="experience-role">
+                            Product Development Intern
+                        </p>
+
+                        <p>
+                            Developed
+                            <strong>The Pacemaker</strong>,
+                            a Python-based Health Information
+                            Exchange platform designed to bridge
+                            critical data gaps between EMS
+                            and hospitals.
+                        </p>
+
+                        <p>
+                            Designed emergency-access functionality
+                            enabling first responders to retrieve
+                            critical encrypted patient information
+                            during time-sensitive emergencies.
+                        </p>
+
+                        <p>
+                            Developed cloud-infrastructure budgeting
+                            and presented technical prototypes and
+                            scalable business proposals.
+                        </p>
+
+                        <span class="achievement">
+                            3rd Place — Health IT Innovation Challenge
+                        </span>
+
+                    </div>
+
+                    <div class="experience-location">
+
+                        <span>
+                            Product Development Intern
+                        </span>
+
+                        <span>
+                            Montgomery, AL
+                        </span>
+
+                        <span>
+                            Fall 2024
+                        </span>
+
+                    </div>
+
+                </article>
 
 
-                <p>
-                    Designed emergency-access functionality enabling first
-                    responders to retrieve critical encrypted patient
-                    information during time-sensitive emergencies.
-                </p>
+                <!-- HP -->
 
+                <article class="experience-item">
 
-                <p>
-                    Developed cloud-infrastructure budgeting and presented
-                    technical prototypes and scalable business proposals;
-                    earned
-                    <strong>
-                        3rd Place in the Health IT Innovation Challenge.
-                    </strong>
-                </p>
+                    <div class="experience-year">
+                        2023
+                    </div>
 
-            </div>
+                    <div class="experience-main">
 
+                        <h3>
+                            HP Technology Ambassador
+                        </h3>
 
-            <!-- HP -->
+                        <p class="experience-role">
+                            Campus Ambassador via FOWA
+                        </p>
 
-            <div class="project-card">
+                        <p>
+                            Conducted technology workshops,
+                            product demonstrations, and technical
+                            support while increasing technology
+                            awareness among more than 400 students.
+                        </p>
 
-                <h3>
-                    💻 HP Technology Ambassador
-                </h3>
+                    </div>
 
-                <h4>
-                    Campus Ambassador | Montgomery, AL | Fall 2023
-                </h4>
+                    <div class="experience-location">
 
+                        <span>
+                            Campus Ambassador
+                        </span>
 
-                <p>
-                    Conducted technology workshops and product demonstrations
-                    while providing technical support and increasing HP
-                    technology awareness among 400+ students.
-                </p>
+                        <span>
+                            Montgomery, AL
+                        </span>
+
+                        <span>
+                            Fall 2023
+                        </span>
+
+                    </div>
+
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
+        <!-- ==========================================
              LEADERSHIP
-        ========================== -->
+        =========================================== -->
 
-        <section class="experience">
+        <section class="section leadership-section">
 
-            <h2>Leadership, Honors & Campus Involvement</h2>
+            <div class="section-heading">
 
+                <div>
 
-            <div class="cards">
+                    <p class="section-label">
+                        BEYOND THE CODE
+                    </p>
 
-
-                <div class="card">
-
-                    🏆 National Dean's List
-
-                    <br>
-
-                    2022–2026
+                    <h2>
+                        Leadership & involvement<span>.</span>
+                    </h2>
 
                 </div>
 
+                <p class="section-description">
+                    Campus leadership, mentorship,
+                    professional development, and service
+                    are also an important part of my experience.
+                </p>
 
-                <div class="card">
-
-                    🌟 Student Orientation Services
-
-                </div>
-
-
-                <div class="card">
-
-                    🌟 ASU Aspire Mentor
-
-                </div>
+            </div>
 
 
-                <div class="card">
+            <div class="leadership-grid">
 
-                    🌟 National Society of Black Engineers
+                <article class="leadership-card">
+                    <p class="leadership-number">01</p>
+                    <h3>National Dean's List</h3>
+                    <p>2022–2026</p>
+                </article>
 
-                </div>
+                <article class="leadership-card">
+                    <p class="leadership-number">02</p>
+                    <h3>Student Orientation Services</h3>
+                    <p>Campus Leadership</p>
+                </article>
 
+                <article class="leadership-card">
+                    <p class="leadership-number">03</p>
+                    <h3>ASU Aspire Mentor</h3>
+                    <p>Mentorship</p>
+                </article>
 
-                <div class="card">
+                <article class="leadership-card">
+                    <p class="leadership-number">04</p>
+                    <h3>National Society of Black Engineers</h3>
+                    <p>NSBE</p>
+                </article>
 
-                    🌟 National Association of Black Accountants
+                <article class="leadership-card">
+                    <p class="leadership-number">05</p>
+                    <h3>National Association of Black Accountants</h3>
+                    <p>NABA</p>
+                </article>
 
-                </div>
+                <article class="leadership-card">
+                    <p class="leadership-number">06</p>
+                    <h3>Alpha Kappa Psi</h3>
+                    <p>Professional Business Fraternity</p>
+                </article>
 
+                <article class="leadership-card">
+                    <p class="leadership-number">07</p>
+                    <h3>National Society of Leadership & Success</h3>
+                    <p>NSLS</p>
+                </article>
 
-                <div class="card">
-
-                    🌟 Alpha Kappa Psi
-
-                </div>
-
-
-                <div class="card">
-
-                    🌟 National Society of Leadership & Success
-
-                </div>
-
+                <article class="leadership-card">
+                    <p class="leadership-number">08</p>
+                    <h3>Women in Finance</h3>
+                    <p>Professional Development</p>
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
+        <!-- ==========================================
              CONTACT
-        ========================== -->
+        =========================================== -->
 
-        <section class="contact">
+        <section
+            class="contact-section"
+            id="contact"
+        >
 
-            <h2>Let's Connect</h2>
+            <div class="contact-container">
 
-
-            <p>
-                I'm interested in software engineering, technology,
-                internship, and professional opportunities.
-            </p>
-
-
-            <div class="contact-links">
-
-
-                <p>
-                    📧 Email:
-
-                    <a href="mailto:smorris3555@alasu.edu">
-                        smorris3555@alasu.edu
-                    </a>
+                <p class="section-label">
+                    LET'S CONNECT
                 </p>
 
+                <h2>
+                    Let's build something
+                    <span>meaningful.</span>
+                </h2>
 
-                <p>
-                    💼 LinkedIn:
+                <p class="contact-description">
+                    I'm interested in software engineering,
+                    technology, internships, collaborations,
+                    and professional opportunities.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="mailto:smorris3555@alasu.edu"
+                        class="primary-btn"
+                    >
+                        Send Me an Email ↗
+                    </a>
 
                     <a
                         href="https://linkedin.com/in/semaj-morris-70942b109"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="secondary-btn"
                     >
-                        View Profile
+                        LinkedIn ↗
                     </a>
-                </p>
-
-
-                <p>
-                    💻 GitHub:
 
                     <a
                         href="https://github.com/semajmorris"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="secondary-btn"
                     >
-                        View Projects
+                        GitHub ↗
                     </a>
-                </p>
 
+                </div>
 
             </div>
 
         </section>
 
-
     </main>
 
 
-    <!-- =========================
+    <!-- ==========================================
          FOOTER
-    ========================== -->
+    =========================================== -->
 
-    <footer>
+    <footer class="footer">
 
-        <p>
-            © 2026 Semaj Morris |
-            Designed & Built with HTML, CSS & JavaScript
-        </p>
+        <div class="footer-container">
+
+            <a
+                href="#home"
+                class="footer-logo"
+            >
+                SEMAJ<span>.</span>
+            </a>
+
+            <p>
+                © 2026 Semaj Morris
+            </p>
+
+            <p>
+                Designed & Built with HTML, CSS & JavaScript
+            </p>
+
+        </div>
 
     </footer>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
-
-    <script src="script.js"></script>
-
+    <script src="./script.js"></script>
 
 </body>
 
 </html>
+```
